@@ -52,3 +52,9 @@ body {
     transform: scale(1.5);
     transition: all 0.3s ease;
 }
+
+.nvbr-down {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
