@@ -2,7 +2,7 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/dsc", "status": 200, "dest": "https://discord.gg/sXh4qfp9fJ" },
-    { "src": "/hry", "status": 200, "dest": "/pages/hry.html" }
+    { "src": "/hry", "status": 200, "dest": "/pages/hry.html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
