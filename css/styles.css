@@ -63,4 +63,13 @@ body {
     text-align: center;
     background-color: #e49500a1;
     border-radius: 1em;
+    margin: 1%;
+}
+
+.hra {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border-radius: 1em;
+    background: #6e2222;
 }
