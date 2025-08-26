@@ -10,5 +10,5 @@
 
 body,html {
     background: #B20101;
-    background: linear-gradient(-135deg,rgba(178, 1, 1, 1) 0%, rgba(92, 6, 6, 1) 100%);
+    background: linear-gradient(-135deg,rgba(178, 1, 1, 1) 0%, rgba(92, 6, 6, 1) 100%) fixed;
 }
