@@ -1,11 +1,9 @@
-let nvbr;
 (async () =>{
     const res = await fetch("/pages/navbar.html");
-    nvbr = await res.text();
+    const nvbr = await res.text();
+    
+    document.querySelector(".navbar").innerHTML = nvbr;
 })();
-
-document.querySelector(".navbar").innerHTML = nvbr;
-
 
 
 
