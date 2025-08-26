@@ -21,4 +21,11 @@ body {
     background-color: #d96c6c;
     border-radius: 15px;
     padding: 0.5%;
+    transition: all 0.3s ease;
+}
+
+.baton:hover {
+    background-color: #fd9f9f;
+    zoom: 125%;
+    transition: all 0.3s ease;
 }
