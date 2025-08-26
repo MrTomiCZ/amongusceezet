@@ -26,6 +26,6 @@ body {
 
 .baton:hover {
     background-color: #fd9f9f;
-    zoom: 125%;
+    transform: scale(125%);
     transition: all 0.3s ease;
 }
