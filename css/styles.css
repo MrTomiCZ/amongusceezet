@@ -69,7 +69,9 @@ body {
 .hra {
     height: 50%;
     width: 50%;
-    margin: auto;
+    margin: 1%;
     border-radius: 1em;
     background: #6e2222;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -28,8 +28,9 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
 
         return `
           <div class="hra">
-            <div class="typ">${g.gameType}</div>
-            <div class="popis">${g.gameDescription}</div>
+            <div class="typ"><i class="fa-regular fa-gamepad"></i> ${g.gameType}</div>
+            <div class="popis"><i class="fa-regular fa-comment"></i> ${g.gameDescription}</div>
+            <div class="cas"><i class="fa-regular fa-clock"></i> ${cas}</div>
           </div>
     `}).join("");
   } catch (err) {
