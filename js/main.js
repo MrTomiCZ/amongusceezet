@@ -1,19 +1,20 @@
 let intval;
+let oldtitle;
 
-function comeBack(oldtitle) {
-    const combacktitle = "Prosím přijďte zpět!";
+function comeBack() {
+    document.title = "Prosím přijďte zpět!";
 
-    document.title = combacktitle;
     setTimeout(() => {
         document.title = oldtitle;
-    },5000);
+    }, 2000); // change back after 2s (adjust as you like)
 }
 
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        const oldtitle = document.title;
-        intval = setInterval(comeBack, 5000)
+        oldtitle = document.title; // save the original title
+        intval = setInterval(comeBack, 5000); // flash every 5s
     } else {
         clearInterval(intval);
+        document.title = oldtitle; // restore original title
     }
 });
