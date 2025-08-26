@@ -1,3 +1,14 @@
+let nvbr;
+(async () =>{
+    const res = await fetch("/pages/navbar.html");
+    nvbr = await res.text();
+})();
+
+document.querySelector(".navbar").innerHTML = nvbr;
+
+
+
+
 let intval;
 let oldtitle;
 
