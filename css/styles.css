@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ScreenMatrix';
-    src: url("/fonts/ScreenMatrix.ttf") format("ttf");
+    src: url("/fonts/ScreenMatrix.ttf") format("truetype");
 }
 
 * {
