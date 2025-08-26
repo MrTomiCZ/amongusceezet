@@ -20,6 +20,7 @@ body {
 .baton {
     text-decoration: none;
     display: inline-block;
+    margin: 1%;
     background-color: #d96c6c;
     border-radius: 10px;
     padding: 0.5%;
