@@ -18,6 +18,7 @@ body {
 }
 
 .baton {
+    display: inline-block;
     background-color: #d96c6c;
     border-radius: 15px;
     padding: 0.5%;
