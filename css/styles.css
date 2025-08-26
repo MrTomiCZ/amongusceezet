@@ -58,3 +58,9 @@ body {
     bottom: 1%;
     right: 1%;
 }
+
+.hry {
+    text-align: center;
+    background-color: #e49500a1;
+    border-radius: 1em;
+}
