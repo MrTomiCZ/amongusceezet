@@ -18,9 +18,10 @@ body {
 }
 
 .baton {
+    text-decoration: none;
     display: inline-block;
     background-color: #d96c6c;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0.5%;
     transition: all 0.3s ease;
 }
