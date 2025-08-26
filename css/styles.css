@@ -18,6 +18,7 @@ body {
 }
 
 .baton {
-    color: #852121;
+    background-color: #d96c6c;
     border-radius: 15px;
+    padding: 0.5%;
 }
