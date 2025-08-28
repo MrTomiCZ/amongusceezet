@@ -12,7 +12,7 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
       return;
     }
 
-    const html = Promise.all(games.map(async g => {
+    const html = await Promise.all(games.map(async g => {
         let cas = "neznámé";
         if (g.timestamp) {
           cas = new Date(g.timestamp).toLocaleString("cs-CZ", {
