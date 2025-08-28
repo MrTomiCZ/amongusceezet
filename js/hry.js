@@ -31,7 +31,8 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
           discriminator: "0",
           displayName: "Nepodařilo se načíst.",
           joinedAt: Date.now(),
-          roles: [{id: "123156454566231", name: "Neexistuje"}]
+          roles: [{id: "123156454566231", name: "Neexistuje"}],
+          avatar: "/images/favicon.png"
         };
         if (g.user) {
           try {
@@ -48,7 +49,7 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
             <div class="typ"><i class="fa-solid fa-gamepad"></i> ${g.gameType}</div>
             <div class="popis"><i class="fa-regular fa-comment"></i> ${g.gameDescription}</div>
             <div class="cas"><i class="fa-regular fa-clock"></i> ${cas}</div>
-            <div class="user"><i class="fa-regular fa-user"></i> ${hrac.displayName}</div>
+            <div class="user"><i class="fa-regular fa-user"></i><img src="${hrac.avatar}" style="max-height:100%;max-width:100%;height:16px;" /> ${hrac.displayName}</div>
           </div>
     `}));
     hryRoot.innerHTML = html.join("");
