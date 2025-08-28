@@ -1,3 +1,7 @@
+const serverID = '1404565410694697144'; // ID serveru
+const channelID = '1405142685546975282'; //POZVANKY
+
+
 const hryRoot = document.querySelector(".hry");
 hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
 
@@ -50,6 +54,7 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
             <div class="popis"><i class="fa-regular fa-comment"></i> ${g.gameDescription}</div>
             <div class="cas"><i class="fa-regular fa-clock"></i> ${cas}</div>
             <div class="user"><i class="fa-regular fa-user"></i> <img src="${hrac.avatar}" style="max-height:100%;max-width:100%;height:16px;" />${hrac.displayName}</div>
+            <div class="msglink"><i class="fa-regular fa-link"></i> <a href="https://discord.com/channels/${serverID}/${channelID}/${g.id}>Otevřít v Discordu</a></div>
           </div>
     `}));
     hryRoot.innerHTML = html.join("");
