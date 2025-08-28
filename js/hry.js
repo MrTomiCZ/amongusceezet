@@ -12,7 +12,7 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
       return;
     }
 
-    hryRoot.innerHTML = games.map(async g => {
+    const html = Promise.all(games.map(async g => {
         let cas = "neznámé";
         if (g.timestamp) {
           cas = new Date(g.timestamp).toLocaleString("cs-CZ", {
@@ -50,7 +50,8 @@ hryRoot.innerHTML = `<div class="hra">Načítám hry…</div>`;
             <div class="cas"><i class="fa-regular fa-clock"></i> ${cas}</div>
             <div class="user"><i class="fa-regular fa-user"></i> ${hrac.displayName}</div>
           </div>
-    `}).join("");
+    `}));
+    hryRoot.innerHTML = html.join("");
   } catch (err) {
     console.error(err);
     hryRoot.innerHTML = `<div class="hra">Nepodařilo se načíst hry. Zkuste znovu načíst stránku (Ctrl+R nebo F5) pokud se nestalo automaticky.</div>`;
