@@ -3,8 +3,8 @@
     { "handle": "filesystem" },
     { "src": "/dsc", "status": 200, "dest": "https://discord.gg/sXh4qfp9fJ" },
     { "src": "/hry", "status": 200, "dest": "/pages/hry.html" },
-    { "src": "/getgamesjson", "status": 200, "dest": "http://46.247.108.145:2502/getgamesjson" },
-    { "src": "/getuserjson", "status": 200, "dest": "http://46.247.108.145:2502/getuserjson" },
+    { "src": "/getgamesjson", "status": 200, "dest": "http://velcord.jpman.eu:25002/getgamesjson" },
+    { "src": "/getuserjson", "status": 200, "dest": "http://velcord.jpman.eu:25002/getuserjson" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
